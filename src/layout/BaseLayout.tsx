@@ -11,9 +11,5 @@ export const BaseLayout: FC<PropsWithChildren> = props => {
 
 const InnerComp: FC<PropsWithChildren> = props => {
   // const {} = useBaseLayoutContext()
-  return <>
-    <main>
-      {props.children}
-    </main>
-  </>
+  return <main>{props.children}</main>
 }

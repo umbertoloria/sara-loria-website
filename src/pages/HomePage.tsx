@@ -10,56 +10,33 @@ export default function HomePage() {
   )
 }
 
-const PortfolioPortrait: FC = () => {
-  return (
-    <div
-      className="flex flex-wrap flex-col justify-center"
-    >
-      <img
-        src={portraitImage}
-        alt="Portfolio"
-        className="rounded-full mt-20 mr-6"
-        style={{
-          overflow: 'hidden',
-          objectFit: 'cover',
-          width: 230,
-          height: 230,
-          boxShadow: '0 0 0 16px rgba(0, 0, 0, .3)',
-        }}
-      />
-    </div>
-  )
+const ImgPortfolioPortrait: FC = () => {
+  return <img className='img-portfolio' src={portraitImage} alt='Portfolio' />
 }
 
 const InnerPage: FC = () => {
   return (
-    <div className="mx-auto pt-32 text-center">
-      <div
-        className="flex flex-wrap gap-5 mx-auto"
-        style={{
-          width: 800,
-        }}
-      >
-        <PortfolioPortrait />
-        <div className="pr-24">
-          <h1
-            className="mt-32 text-7xl font-bold text-indigo-50"
-            style={{
-              textShadow: '5px 5px 0 rgba(0, 0, 0, .3)',
-            }}
-          >
-            Sara Loria
-          </h1>
-          <p
-            className="mt-12 text-3xl font-bold text-indigo-50"
-            style={{
-              textShadow: '2px 2px 0 rgba(0, 0, 0, .3)',
-              textTransform: 'uppercase',
-              letterSpacing: 3,
-            }}
-          >
-            Visual Designer
-          </p>
+    <div className='header'>
+      <div className='header-flex'>
+        <ImgPortfolioPortrait />
+        <div className='md:pl-20 md:text-left'>
+          <div className='mt-16 md:mt-0'>
+            <h1 className='font-bold text-gray-600'>
+              Sara
+              <br />
+              Loria
+            </h1>
+            <p
+              className='mt-12 mb-8 font-bold text-gray-500
+                text-2xl md:text-4xl'
+              style={{
+                textShadow: '2px 2px 0 rgba(0, 0, 0, .15)',
+                letterSpacing: 2,
+              }}
+            >
+              Portfolio | Visual Designer
+            </p>
+          </div>
         </div>
       </div>
     </div>
