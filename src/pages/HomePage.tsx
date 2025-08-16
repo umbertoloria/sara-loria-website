@@ -1,6 +1,5 @@
 import { FC } from 'react'
 import { BaseLayout } from '../layout/BaseLayout.tsx'
-import portraitImage from '../assets/portrait.png'
 
 export default function HomePage() {
   return (
@@ -10,35 +9,78 @@ export default function HomePage() {
   )
 }
 
-const ImgPortfolioPortrait: FC = () => {
-  return <img className='img-portfolio' src={portraitImage} alt='Portfolio' />
-}
-
 const InnerPage: FC = () => {
   return (
+    <div>
+      <Header />
+      <GridSection />
+    </div>
+  )
+}
+
+const Header: FC = () => {
+  return (
     <div className='header'>
-      <div className='header-flex'>
-        <ImgPortfolioPortrait />
-        <div className='md:pl-20 md:text-left'>
-          <div className='mt-16 md:mt-0'>
-            <h1 className='font-bold text-gray-600'>
-              Sara
-              <br />
-              Loria
-            </h1>
-            <p
-              className='mt-12 mb-8 font-bold text-gray-500
-                text-2xl md:text-4xl'
-              style={{
-                textShadow: '2px 2px 0 rgba(0, 0, 0, .15)',
-                letterSpacing: 2,
-              }}
-            >
-              Portfolio | Visual Designer
-            </p>
-          </div>
-        </div>
+      <Menu />
+      <ImaVisual />
+    </div>
+  )
+}
+
+const Menu: FC = () => {
+  return (
+    <div className='menu'>
+      <ul>
+        <MenuItem label='about me.' />
+        <MenuItem label='projects.' />
+        <MenuItem label='contact.' />
+      </ul>
+    </div>
+  )
+}
+
+const MenuItem: FC<{
+  label: string
+}> = ({ label }) => {
+  return (
+    <li>
+      <a>{label}</a>
+    </li>
+  )
+}
+
+const ImaVisual: FC = () => {
+  return (
+    <div className='ima-visual'>
+      <div className='ima-visual-title'>
+        I'm Sara Loria.
+        <br />
+        I'm a <span>visual designer</span>.
       </div>
+      <p className='ima-visual-text'>
+        Powered by iced coffee, happy playlists, and the thrill of turning ideas
+        into something people can see and get excited about.
+      </p>
+    </div>
+  )
+}
+
+const GridSection: FC = () => {
+  return (
+    <section className='grid-section'>
+      <h1>Projects</h1>
+      <GridSectionImage projCode='p1-tupperware' />
+      <GridSectionImage projCode='p2-q44' />
+    </section>
+  )
+}
+
+const GridSectionImage: FC<{
+  projCode: string
+}> = ({ projCode }) => {
+  return (
+    <div className='grid-section-image'>
+      <a href='#' className={projCode} />
     </div>
   )
 }
