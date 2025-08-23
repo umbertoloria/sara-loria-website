@@ -1,22 +1,22 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import Root from './Root.tsx'
+import { DefaultElement } from './DefaultElement.tsx'
 import './index.css'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import ErrorPage from './error-page.tsx'
-import HomePage from './pages/HomePage.tsx'
+import { GridSection } from './pages/GridSection.tsx'
 
 export const baseRoot = '/' as const
 const router = createBrowserRouter(
   [
     {
       path: '/',
-      element: <Root />,
+      element: <DefaultElement />,
       errorElement: <ErrorPage />,
       children: [
         {
           path: '',
-          element: <HomePage />,
+          element: <GridSection />,
         },
       ],
     },

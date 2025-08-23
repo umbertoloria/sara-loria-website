@@ -1,24 +1,6 @@
 import { FC } from 'react'
-import { BaseLayout } from '../layout/BaseLayout.tsx'
 
-export default function HomePage() {
-  return (
-    <BaseLayout>
-      <InnerPage />
-    </BaseLayout>
-  )
-}
-
-const InnerPage: FC = () => {
-  return (
-    <div>
-      <Header />
-      <GridSection />
-    </div>
-  )
-}
-
-const Header: FC = () => {
+export const Header: FC = () => {
   return (
     <div className='header'>
       <Menu />
@@ -61,26 +43,6 @@ const ImaVisual: FC = () => {
         Powered by iced coffee, happy playlists, and the thrill of turning ideas
         into something people can see and get excited about.
       </p>
-    </div>
-  )
-}
-
-const GridSection: FC = () => {
-  return (
-    <section className='grid-section'>
-      <h1>Projects</h1>
-      <GridSectionImage projCode='p1-tupperware' />
-      <GridSectionImage projCode='p2-q44' />
-    </section>
-  )
-}
-
-const GridSectionImage: FC<{
-  projCode: string
-}> = ({ projCode }) => {
-  return (
-    <div className='grid-section-image'>
-      <a href='#' className={projCode} />
     </div>
   )
 }
