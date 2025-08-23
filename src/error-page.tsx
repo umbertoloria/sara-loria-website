@@ -6,11 +6,11 @@ export default function ErrorPage() {
   console.error(error)
 
   return (
-    <section className='text-gray-700 p-8'>
+    <div className='text-gray-700 p-8'>
       <h1 className='text-2xl font-bold'>Oops!</h1>
       <p className='mt-4'>
         <i>{error.statusText || error.message}</i>
       </p>
-    </section>
+    </div>
   )
 }

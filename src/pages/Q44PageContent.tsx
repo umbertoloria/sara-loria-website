@@ -5,11 +5,11 @@ import { GridSectionImage } from './MainPageContent.tsx'
 export const Q44PageContent: FC = () => {
   return (
     <>
-      <section className="grid-section">
-        <h1>Q44</h1>
+      <section>
+        <h1 className='lead'>Q44</h1>
         <h2>Graphic Languages laboratory</h2>
-        <GridSectionImage projCode="p2-q44" to={pageQ44Href} />
-        <div className="line" />
+        <GridSectionImage projCode='p2-q44' to={pageQ44Href} />
+        <div className='line' />
         <h1>concept</h1>
         <p>
           Created to keep alive the memory of the Quadraro, a Roman neighborhood
@@ -21,9 +21,11 @@ export const Q44PageContent: FC = () => {
           collective memory is the key to understanding the present and shaping
           a more conscious future.
         </p>
-        <div className="line" />
-        <img src="q44/sec0n0.jpg" alt="Open box" />
-        <img src="q44/sec0n1.jpg" alt="Playing the game" />
+        <div className='line' />
+        <div className='section-real'>
+          <img src='q44/sec0n0.jpg' alt='Open box' />
+          <img src='q44/sec0n1.jpg' alt='Playing the game' />
+        </div>
         <p>
           A letter firstly greets those who approach, a guide to the deeper
           meaning of the exploration ahead. Then come maps, clues and physical
@@ -34,7 +36,9 @@ export const Q44PageContent: FC = () => {
           possible to sense what happened there, observing the streets and
           spaces with awareness and respect for their history.
         </p>
-        <img src="q44/q44-cover.jpg" alt="Leporello" />
+        <div className='section-real'>
+          <img src='q44/q44-cover.jpg' alt='Leporello' />
+        </div>
         <p>
           At the end of the activity, the leporello becomes a companion through
           the streets of the Quadraro. Through its illustrations, it traces step
@@ -45,7 +49,7 @@ export const Q44PageContent: FC = () => {
           guiding the gaze, weaving together memory and place, and making
           history tangible as one moves through the spaces that carry it.
         </p>
-        <div className="line" />
+        <div className='line' />
         <GridImages1 />
       </section>
     </>
@@ -54,9 +58,9 @@ export const Q44PageContent: FC = () => {
 
 const GridImages1: FC = () => {
   return (
-    <div className="grid-real">
-      <img src="q44/grid0n0.jpg" alt="Label" />
-      <img src="q44/grid0n1.jpg" alt="Datemark" />
+    <div className='grid-real'>
+      <img src='q44/grid0n0.jpg' alt='Label' />
+      <img src='q44/grid0n1.jpg' alt='Datemark' />
     </div>
   )
 }

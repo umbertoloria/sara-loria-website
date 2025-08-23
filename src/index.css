@@ -87,7 +87,7 @@ body {
     }
 }
 
-.grid-section {
+section {
     background: var(--cl-white);
     padding: 2rem;
 
@@ -96,12 +96,15 @@ body {
         font-weight: 600;
         margin: 0 0 1em 0;
         color: var(--cl-black);
+        &.lead {
+            margin-bottom: .4em;
+        }
     }
 
     h2 {
         font-size: 1.1em;
         font-weight: 600;
-        margin: 0 0 1.0em 0;
+        margin: 0 0 1.8em 0;
         color: var(--cl-gray);
     }
 
@@ -136,6 +139,7 @@ body {
         height: 3px;
         margin: 40px 0;
         background: var(--cl-black);
+        border-radius: 2px;
     }
 
     .grid-real {
@@ -145,6 +149,18 @@ body {
 
         img {
             width: calc((100% - 20px) / 2);
+            border-radius: 2px;
+        }
+    }
+
+    .section-real {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        img {
+            max-width: 100%;
+            border-radius: 2px;
         }
     }
 }

@@ -5,8 +5,8 @@ import { GridSectionImage } from './MainPageContent.tsx'
 export const TupperwarePageContent: FC = () => {
   return (
     <>
-      <section className='grid-section'>
-        <h1>Tupperware rebranding</h1>
+      <section>
+        <h1 className='lead'>Tupperware rebranding</h1>
         <h2>Brand Design laboratory</h2>
         <GridSectionImage projCode='p1-tupperware' to={pageTupperwareHref} />
         <div className='line' />

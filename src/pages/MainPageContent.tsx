@@ -1,10 +1,10 @@
 import { FC } from 'react'
-import { pageTupperwareHref, pageQ44Href } from '../main.tsx'
+import { pageQ44Href, pageTupperwareHref } from '../main.tsx'
 import { Link } from 'react-router-dom'
 
 export const MainPageContent: FC = () => {
   return (
-    <section className='grid-section'>
+    <section>
       <h1>Projects</h1>
       <GridSectionImage projCode='p1-tupperware' to={pageTupperwareHref} />
       <GridSectionImage projCode='p2-q44' to={pageQ44Href} />
