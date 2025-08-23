@@ -1,4 +1,6 @@
 import { FC } from 'react'
+import { Link } from 'react-router-dom'
+import { baseRoot } from '../main.tsx'
 
 export const Header: FC = () => {
   return (
@@ -13,9 +15,9 @@ const Menu: FC = () => {
   return (
     <div className='menu'>
       <ul>
-        <MenuItem label='about me.' />
-        <MenuItem label='projects.' />
-        <MenuItem label='contact.' />
+        <MenuItem label='about me.' to={baseRoot} />
+        <MenuItem label='projects.' to={baseRoot} />
+        <MenuItem label='contact.' to={baseRoot} />
       </ul>
     </div>
   )
@@ -23,10 +25,11 @@ const Menu: FC = () => {
 
 const MenuItem: FC<{
   label: string
-}> = ({ label }) => {
+  to: string
+}> = ({ label, to }) => {
   return (
     <li>
-      <a>{label}</a>
+      <Link to={to}>{label}</Link>
     </li>
   )
 }

@@ -5,11 +5,11 @@ import { GridSectionImage } from './MainPageContent.tsx'
 export const TupperwarePageContent: FC = () => {
   return (
     <>
-      <section className="grid-section">
+      <section className='grid-section'>
         <h1>Tupperware rebranding</h1>
         <h2>Brand Design laboratory</h2>
-        <GridSectionImage projCode="p1-tupperware" href={pageTupperwareHref} />
-        <div className="line" />
+        <GridSectionImage projCode='p1-tupperware' to={pageTupperwareHref} />
+        <div className='line' />
         <h1>concept</h1>
         <p>
           Tupperware's rebrand speaks directly to a new generation of young,
@@ -20,7 +20,7 @@ export const TupperwarePageContent: FC = () => {
           renewed vision invites customers to join heathy choices for a better
           future.
         </p>
-        <div className="line" />
+        <div className='line' />
         <GridImages1 />
         <p>
           Tupperware is embracing a new chapter, moving beyond the traditional
@@ -31,7 +31,7 @@ export const TupperwarePageContent: FC = () => {
           where is sold, it's about how it connects: immediate, visible, and
           aligned with the way consumers shop today.
         </p>
-        <div className="line" />
+        <div className='line' />
         <GridImages2 />
       </section>
     </>
@@ -40,20 +40,20 @@ export const TupperwarePageContent: FC = () => {
 
 const GridImages1: FC = () => {
   return (
-    <div className="grid-real">
-      <img src="tupperware/grid0n0.jpg" alt="Open package" />
-      <img src="tupperware/grid0n1.jpg" alt="Multiple boxes" />
-      <img src="tupperware/grid0n2.jpg" alt="Showcase box" />
-      <img src="tupperware/grid0n3.jpg" alt="Three boxes" />
+    <div className='grid-real'>
+      <img src='tupperware/grid0n0.jpg' alt='Open package' />
+      <img src='tupperware/grid0n1.jpg' alt='Multiple boxes' />
+      <img src='tupperware/grid0n2.jpg' alt='Showcase box' />
+      <img src='tupperware/grid0n3.jpg' alt='Three boxes' />
     </div>
   )
 }
 
 const GridImages2: FC = () => {
   return (
-    <div className="grid-real">
-      <img src="tupperware/grid1n0.jpg" alt="Mock-up logo" />
-      <img src="tupperware/grid1n1.jpg" alt="Mock-up poster" />
+    <div className='grid-real'>
+      <img src='tupperware/grid1n0.jpg' alt='Mock-up logo' />
+      <img src='tupperware/grid1n1.jpg' alt='Mock-up poster' />
     </div>
   )
 }
