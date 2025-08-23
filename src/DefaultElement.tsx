@@ -6,7 +6,7 @@ export const DefaultElement = () => {
   return (
     <>
       <BaseLayout>
-        <div>
+        <div id='layout'>
           <Header />
           <Outlet />
         </div>
