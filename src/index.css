@@ -3,7 +3,7 @@
 
 :root {
     --cl-black: #333;
-    --cl-gray: #666;
+    --cl-gray: #888;
     --cl-white: #fffbf6;
     --cl-white-transparent: rgba(255, 251, 246, 0.75);
     --cl-purple: #893168;
@@ -93,12 +93,14 @@ body {
 
     h1 {
         font-size: 1.5em;
+        font-weight: 600;
         margin: 0 0 1em 0;
         color: var(--cl-black);
     }
 
     h2 {
-        font-size: 1.3em;
+        font-size: 1.1em;
+        font-weight: 600;
         margin: 0 0 1.0em 0;
         color: var(--cl-gray);
     }
@@ -120,12 +122,29 @@ body {
             background-position: center;
 
             &.p1-tupperware {
-                background-image: url('/p1-tupperware.jpg');
+                background-image: url('/tupperware/tup-cover.jpg');
             }
 
             &.p2-q44 {
-                background-image: url('/p2-q44.jpg');
+                background-image: url('/q44/q44-cover.jpg');
             }
+        }
+    }
+
+    .line {
+        display: block;
+        height: 3px;
+        margin: 40px 0;
+        background: var(--cl-black);
+    }
+
+    .grid-real {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+
+        img {
+            width: calc((100% - 20px) / 2);
         }
     }
 }

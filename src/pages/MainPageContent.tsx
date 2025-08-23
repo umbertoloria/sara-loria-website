@@ -11,7 +11,7 @@ export const MainPageContent: FC = () => {
   )
 }
 
-const GridSectionImage: FC<{
+export const GridSectionImage: FC<{
   projCode: string
   href: string
 }> = ({ projCode, href }) => {
