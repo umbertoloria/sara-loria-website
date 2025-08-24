@@ -37,7 +37,7 @@ export const Q44PageContent: FC = () => {
           spaces with awareness and respect for their history.
         </p>
         <div className='section-real'>
-          <img src='q44/q44-cover.jpg' alt='Leporello' />
+          <img src='q44/sec1.jpg' alt='Leporello' />
         </div>
         <p>
           At the end of the activity, the leporello becomes a companion through
