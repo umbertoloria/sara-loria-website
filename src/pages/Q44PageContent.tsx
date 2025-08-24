@@ -1,5 +1,4 @@
 import { FC } from 'react'
-import { pageQ44Href } from '../main.tsx'
 import { GridSectionImage } from './MainPageContent.tsx'
 
 export const Q44PageContent: FC = () => {
@@ -8,7 +7,7 @@ export const Q44PageContent: FC = () => {
       <section>
         <h1 className='lead'>Q44</h1>
         <h2>Graphic Languages laboratory</h2>
-        <GridSectionImage projCode='p2-q44' to={pageQ44Href} />
+        <GridSectionImage projCode='p2-q44' />
         <div className='line' />
         <h1>concept</h1>
         <p>

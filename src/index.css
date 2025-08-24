@@ -126,9 +126,12 @@ section {
             width: 100%;
             height: 35vh;
             border-radius: 2px;
-            cursor: pointer;
             background-size: cover;
             background-position: center;
+
+            &[href] {
+                cursor: pointer;
+            }
 
             &.p1-tupperware {
                 background-image: url('/tupperware/tup-cover.jpg');

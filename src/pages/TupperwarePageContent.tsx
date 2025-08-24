@@ -1,5 +1,4 @@
 import { FC } from 'react'
-import { pageTupperwareHref } from '../main.tsx'
 import { GridSectionImage } from './MainPageContent.tsx'
 
 export const TupperwarePageContent: FC = () => {
@@ -8,7 +7,7 @@ export const TupperwarePageContent: FC = () => {
       <section>
         <h1 className='lead'>Tupperware rebranding</h1>
         <h2>Brand Design laboratory</h2>
-        <GridSectionImage projCode='p1-tupperware' to={pageTupperwareHref} />
+        <GridSectionImage projCode='p1-tupperware' />
         <div className='line' />
         <h1>concept</h1>
         <p>
