@@ -140,12 +140,16 @@ section {
             &.p2-q44 {
                 background-image: url('/q44/q44-cover.jpg');
             }
+
+            &.p3-stanza {
+                background-image: url('/stanza/stanza-cover.jpg');
+            }
         }
     }
 
     .line {
         display: block;
-        height: 3px;
+        height: 2px;
         margin: 40px 0;
         background: var(--cl-black);
         border-radius: 2px;

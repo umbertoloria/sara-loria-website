@@ -15,7 +15,7 @@ const Menu: FC = () => {
   return (
     <div className='menu'>
       <ul>
-        <MenuItem label='about me.' to={baseRoot} />
+        {/*<MenuItem label='about me.' to={baseRoot} />*/}
         <MenuItem label='projects.' to={baseRoot} />
         <MenuItem label='contact.' to={baseRoot} />
       </ul>
