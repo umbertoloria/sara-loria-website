@@ -1,5 +1,6 @@
 import { FC } from 'react'
 import { GridSectionImage } from './MainPageContent.tsx'
+import { GridReal } from '../components/GridReal.tsx'
 
 export const TupperwarePageContent: FC = () => {
   return (
@@ -20,7 +21,12 @@ export const TupperwarePageContent: FC = () => {
           future.
         </p>
         <div className='line' />
-        <GridImages1 />
+        <GridReal>
+          <img src='tupperware/grid0n0.jpg' alt='Open package' />
+          <img src='tupperware/grid0n1.jpg' alt='Multiple boxes' />
+          <img src='tupperware/grid0n2.jpg' alt='Showcase box' />
+          <img src='tupperware/grid0n3.jpg' alt='Three boxes' />
+        </GridReal>
         <p>
           Tupperware is embracing a new chapter, moving beyond the traditional
           door-to-door model that once defined its success. By stepping into
@@ -31,28 +37,11 @@ export const TupperwarePageContent: FC = () => {
           aligned with the way consumers shop today.
         </p>
         <div className='line' />
-        <GridImages2 />
+        <GridReal>
+          <img src='tupperware/grid1n0.jpg' alt='Mock-up logo' />
+          <img src='tupperware/grid1n1.jpg' alt='Mock-up poster' />
+        </GridReal>
       </section>
     </>
-  )
-}
-
-const GridImages1: FC = () => {
-  return (
-    <div className='grid-real'>
-      <img src='tupperware/grid0n0.jpg' alt='Open package' />
-      <img src='tupperware/grid0n1.jpg' alt='Multiple boxes' />
-      <img src='tupperware/grid0n2.jpg' alt='Showcase box' />
-      <img src='tupperware/grid0n3.jpg' alt='Three boxes' />
-    </div>
-  )
-}
-
-const GridImages2: FC = () => {
-  return (
-    <div className='grid-real'>
-      <img src='tupperware/grid1n0.jpg' alt='Mock-up logo' />
-      <img src='tupperware/grid1n1.jpg' alt='Mock-up poster' />
-    </div>
   )
 }

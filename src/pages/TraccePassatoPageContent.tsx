@@ -1,5 +1,6 @@
 import { FC } from 'react'
 import { GridSectionImage } from './MainPageContent.tsx'
+import { GridReal } from '../components/GridReal.tsx'
 
 export const TraccePassatoPageContent: FC = () => {
   return (
@@ -19,34 +20,28 @@ export const TraccePassatoPageContent: FC = () => {
           the gaze to slow, listen, and discover echoes of a past still alive.
         </p>
         <div className='line' />
-        <GridImages1 />
+        {/* TODO: Put "alt"s here */}
+        <GridReal>
+          <img src='tracce-passato/0.jpg' alt='' />
+          <img src='tracce-passato/1.jpg' alt='' />
+          <img src='tracce-passato/2.jpg' alt='' />
+          <img src='tracce-passato/3.jpg' alt='' />
+          <img src='tracce-passato/4.jpg' alt='' />
+          <img src='tracce-passato/5.jpg' alt='' />
+          <img src='tracce-passato/6.jpg' alt='' />
+          <img src='tracce-passato/7.jpg' alt='' />
+          <img src='tracce-passato/8.jpg' alt='' />
+          <img src='tracce-passato/9.jpg' alt='' />
+          <img src='tracce-passato/10.jpg' alt='' />
+          <img src='tracce-passato/11.jpg' alt='' />
+          <img src='tracce-passato/12.jpg' alt='' />
+          <img src='tracce-passato/13.jpg' alt='' />
+          <img src='tracce-passato/14.jpg' alt='' />
+          <img src='tracce-passato/15.jpg' alt='' />
+          <img src='tracce-passato/16.jpg' alt='' />
+          <img src='tracce-passato/17.jpg' alt='' />
+        </GridReal>
       </section>
     </>
-  )
-}
-
-const GridImages1: FC = () => {
-  // TODO: Put "alt"s here
-  return (
-    <div className='grid-real'>
-      <img src='tracce-passato/0.jpg' alt='' />
-      <img src='tracce-passato/1.jpg' alt='' />
-      <img src='tracce-passato/2.jpg' alt='' />
-      <img src='tracce-passato/3.jpg' alt='' />
-      <img src='tracce-passato/4.jpg' alt='' />
-      <img src='tracce-passato/5.jpg' alt='' />
-      <img src='tracce-passato/6.jpg' alt='' />
-      <img src='tracce-passato/7.jpg' alt='' />
-      <img src='tracce-passato/8.jpg' alt='' />
-      <img src='tracce-passato/9.jpg' alt='' />
-      <img src='tracce-passato/10.jpg' alt='' />
-      <img src='tracce-passato/11.jpg' alt='' />
-      <img src='tracce-passato/12.jpg' alt='' />
-      <img src='tracce-passato/13.jpg' alt='' />
-      <img src='tracce-passato/14.jpg' alt='' />
-      <img src='tracce-passato/15.jpg' alt='' />
-      <img src='tracce-passato/16.jpg' alt='' />
-      <img src='tracce-passato/17.jpg' alt='' />
-    </div>
   )
 }

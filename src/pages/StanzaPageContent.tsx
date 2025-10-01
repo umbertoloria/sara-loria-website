@@ -1,5 +1,6 @@
 import { FC } from 'react'
 import { GridSectionImage } from './MainPageContent.tsx'
+import { GridReal } from '../components/GridReal.tsx'
 
 export const StanzaPageContent: FC = () => {
   return (
@@ -26,7 +27,12 @@ export const StanzaPageContent: FC = () => {
           to celebrate music not only as art, but as a way of connecting people
           and building lasting scenes.
         </p>
-        <GridImages1 />
+        <GridReal>
+          <img src='stanza/grid0n0.jpg' alt='Custom guitar picks' />
+          <img src='stanza/grid0n1.jpg' alt='Hat with logo' />
+          <img src='stanza/grid0n2.jpeg' alt='T-shirt with logo' />
+          <img src='stanza/grid0n3.jpeg' alt='Cards with logo' />
+        </GridReal>
         <p>
           The flower, this its many petals - close to one another yet each rich
           in its own individuality - perfectly symbolizes the spirit of this
@@ -36,16 +42,5 @@ export const StanzaPageContent: FC = () => {
         </p>
       </section>
     </>
-  )
-}
-
-const GridImages1: FC = () => {
-  return (
-    <div className='grid-real'>
-      <img src='stanza/grid0n0.jpg' alt='Custom guitar picks' />
-      <img src='stanza/grid0n1.jpg' alt='Hat with logo' />
-      <img src='stanza/grid0n2.jpeg' alt='T-shirt with logo' />
-      <img src='stanza/grid0n3.jpeg' alt='Cards with logo' />
-    </div>
   )
 }

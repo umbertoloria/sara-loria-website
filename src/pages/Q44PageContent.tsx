@@ -1,5 +1,6 @@
 import { FC } from 'react'
 import { GridSectionImage } from './MainPageContent.tsx'
+import { GridReal } from '../components/GridReal.tsx'
 
 export const Q44PageContent: FC = () => {
   return (
@@ -49,17 +50,11 @@ export const Q44PageContent: FC = () => {
           history tangible as one moves through the spaces that carry it.
         </p>
         <div className='line' />
-        <GridImages1 />
+        <GridReal>
+          <img src='q44/grid0n0.jpg' alt='Label' />
+          <img src='q44/grid0n1.jpg' alt='Datemark' />
+        </GridReal>
       </section>
     </>
-  )
-}
-
-const GridImages1: FC = () => {
-  return (
-    <div className='grid-real'>
-      <img src='q44/grid0n0.jpg' alt='Label' />
-      <img src='q44/grid0n1.jpg' alt='Datemark' />
-    </div>
   )
 }
