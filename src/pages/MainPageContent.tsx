@@ -1,5 +1,10 @@
 import { FC } from 'react'
-import { pageQ44Href, pageStanzaHref, pageTupperwareHref } from '../main.tsx'
+import {
+  pageTraccePassatoHref,
+  pageQ44Href,
+  pageStanzaHref,
+  pageTupperwareHref,
+} from '../main.tsx'
 import { Link } from 'react-router-dom'
 
 export const MainPageContent: FC = () => {
@@ -9,6 +14,10 @@ export const MainPageContent: FC = () => {
       <GridSectionImage projCode='p1-tupperware' to={pageTupperwareHref} />
       <GridSectionImage projCode='p2-q44' to={pageQ44Href} />
       <GridSectionImage projCode='p3-stanza' to={pageStanzaHref} />
+      <GridSectionImage
+        projCode='p4-tracce-passato'
+        to={pageTraccePassatoHref}
+      />
     </section>
   )
 }

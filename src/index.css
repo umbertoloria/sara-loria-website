@@ -144,6 +144,10 @@ section {
             &.p3-stanza {
                 background-image: url('/stanza/stanza-cover.jpg');
             }
+
+            &.p4-tracce-passato {
+                background-image: url('/tracce-passato/tracce-passato-cover.jpg');
+            }
         }
     }
 

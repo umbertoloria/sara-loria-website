@@ -8,11 +8,13 @@ import { MainPageContent } from './pages/MainPageContent.tsx'
 import { TupperwarePageContent } from './pages/TupperwarePageContent.tsx'
 import { Q44PageContent } from './pages/Q44PageContent.tsx'
 import { StanzaPageContent } from './pages/StanzaPageContent.tsx'
+import { TraccePassatoPageContent } from './pages/TraccePassatoPageContent.tsx'
 
 export const baseRoot = '/' as const
 export const pageTupperwareHref = '/tupperware' as const
 export const pageQ44Href = '/q44' as const
 export const pageStanzaHref = '/stanza' as const
+export const pageTraccePassatoHref = '/tracce-passato' as const
 
 const router = createHashRouter(
   [
@@ -36,6 +38,10 @@ const router = createHashRouter(
         {
           path: pageStanzaHref,
           element: <StanzaPageContent />,
+        },
+        {
+          path: pageTraccePassatoHref,
+          element: <TraccePassatoPageContent />,
         },
       ],
     },
