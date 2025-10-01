@@ -1,11 +1,11 @@
+import { GridSectionImage } from '@/app/ui/GridSectionImage'
 import {
   pageQ44Href,
   pageStanzaHref,
   pageTraccePassatoHref,
   pageTupperwareHref,
   pageWonderSnackHref,
-} from '../main.tsx'
-import { GridSectionImage } from '../app/ui/GridSectionImage.tsx'
+} from '@/app/paths'
 
 export default function MainPageContent() {
   return (

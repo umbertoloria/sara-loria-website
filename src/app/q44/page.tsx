@@ -1,6 +1,6 @@
-import { GridSectionImage } from '../app/ui/GridSectionImage.tsx'
-import { SectionReal } from '../app/ui/SectionReal.tsx'
-import { GridReal } from '../app/ui/GridReal.tsx'
+import { GridSectionImage } from '../ui/GridSectionImage'
+import { SectionReal } from '../ui/SectionReal'
+import { GridReal } from '../ui/GridReal'
 
 export default function Q44PageContent() {
   return (

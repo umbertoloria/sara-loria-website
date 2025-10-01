@@ -1,5 +1,5 @@
-import { GridSectionImage } from '../app/ui/GridSectionImage.tsx'
-import { GridReal } from '../app/ui/GridReal.tsx'
+import { GridSectionImage } from '../ui/GridSectionImage'
+import { GridReal } from '../ui/GridReal'
 
 export default function TupperwarePageContent() {
   return (

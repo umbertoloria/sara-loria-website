@@ -1,5 +1,5 @@
 import { FC } from 'react'
-import { Link } from 'react-router-dom'
+import Link from 'next/link'
 
 export const GridSectionImage: FC<{
   projCode: string
@@ -9,7 +9,7 @@ export const GridSectionImage: FC<{
     <div className='grid-section-image'>
       {to ? (
         <>
-          <Link to={to} className={projCode} />
+          <Link href={to} className={projCode} />
         </>
       ) : (
         <>

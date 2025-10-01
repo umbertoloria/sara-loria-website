@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap");
 
 :root {
     --cl-black: #333;
@@ -16,8 +16,10 @@
 }
 
 body {
-    font-family: Instrument Sans, sans-serif;
-    background: #F6F2E7;
+    font-family:
+        Instrument Sans,
+        sans-serif;
+    background: #f6f2e7;
     margin: 0;
     overflow-y: scroll;
 }
@@ -58,7 +60,7 @@ body {
                     display: block;
                     color: var(--cl-white-transparent);
                     cursor: pointer;
-                    transition: .2s;
+                    transition: 0.2s;
 
                     &:hover {
                         color: var(--cl-white);
@@ -102,7 +104,7 @@ section {
         color: var(--cl-black);
 
         &.lead {
-            margin-bottom: .4em;
+            margin-bottom: 0.4em;
         }
     }
 
@@ -133,23 +135,23 @@ section {
             }
 
             &.p1-tupperware {
-                background-image: url('/tupperware/tup-cover.jpg');
+                background-image: url("/tupperware/tup-cover.jpg");
             }
 
             &.p2-q44 {
-                background-image: url('/q44/q44-cover.jpg');
+                background-image: url("/q44/q44-cover.jpg");
             }
 
             &.p3-stanza {
-                background-image: url('/stanza/stanza-cover.jpg');
+                background-image: url("/stanza/stanza-cover.jpg");
             }
 
             &.p4-tracce-passato {
-                background-image: url('/tracce-passato/tracce-passato-cover.jpg');
+                background-image: url("/tracce-passato/tracce-passato-cover.jpg");
             }
 
             &.p5-wondersnack {
-                background-image: url('/wondersnack/wondersnack-cover.jpeg');
+                background-image: url("/wondersnack/wondersnack-cover.jpeg");
             }
         }
     }

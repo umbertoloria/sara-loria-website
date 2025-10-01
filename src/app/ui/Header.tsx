@@ -1,6 +1,6 @@
 import { FC } from 'react'
-import { Link } from 'react-router-dom'
-import { baseRoot } from '../../main.tsx'
+import Link from 'next/link'
+import { baseRoot } from '@/app/paths'
 
 export const Header: FC = () => {
   return (
@@ -29,7 +29,7 @@ const MenuItem: FC<{
 }> = ({ label, to }) => {
   return (
     <li>
-      <Link to={to}>{label}</Link>
+      <Link href={to}>{label}</Link>
     </li>
   )
 }
