@@ -1,9 +1,8 @@
-import { FC } from 'react'
-import { GridSectionImage } from './MainPageContent.tsx'
-import { GridReal } from '../components/GridReal.tsx'
-import { SectionReal } from '../components/SectionReal.tsx'
+import { GridSectionImage } from '../app/ui/GridSectionImage.tsx'
+import { SectionReal } from '../app/ui/SectionReal.tsx'
+import { GridReal } from '../app/ui/GridReal.tsx'
 
-export const StanzaPageContent: FC = () => {
+export default function StanzaPageContent() {
   return (
     <>
       <section>

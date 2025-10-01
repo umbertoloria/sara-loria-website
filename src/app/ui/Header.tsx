@@ -1,6 +1,6 @@
 import { FC } from 'react'
 import { Link } from 'react-router-dom'
-import { baseRoot } from '../main.tsx'
+import { baseRoot } from '../../main.tsx'
 
 export const Header: FC = () => {
   return (

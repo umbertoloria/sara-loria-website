@@ -1,5 +1,5 @@
-import { Header } from './components/Header.tsx'
 import { FC, PropsWithChildren } from 'react'
+import { Header } from './Header.tsx'
 
 export const LayoutPage: FC<PropsWithChildren> = ({ children }) => {
   return (

@@ -1,8 +1,7 @@
-import { FC } from 'react'
-import { GridSectionImage } from './MainPageContent.tsx'
-import { GridReal } from '../components/GridReal.tsx'
+import { GridSectionImage } from '../app/ui/GridSectionImage.tsx'
+import { GridReal } from '../app/ui/GridReal.tsx'
 
-export const TraccePassatoPageContent: FC = () => {
+export default function TraccePassatoPageContent() {
   return (
     <>
       <section>

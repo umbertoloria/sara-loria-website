@@ -1,14 +1,13 @@
-import { FC } from 'react'
 import {
-  pageTraccePassatoHref,
   pageQ44Href,
   pageStanzaHref,
+  pageTraccePassatoHref,
   pageTupperwareHref,
   pageWonderSnackHref,
 } from '../main.tsx'
-import { Link } from 'react-router-dom'
+import { GridSectionImage } from '../app/ui/GridSectionImage.tsx'
 
-export const MainPageContent: FC = () => {
+export default function MainPageContent() {
   return (
     <section>
       <h1>Projects</h1>
@@ -21,24 +20,5 @@ export const MainPageContent: FC = () => {
       />
       <GridSectionImage projCode='p5-wondersnack' to={pageWonderSnackHref} />
     </section>
-  )
-}
-
-export const GridSectionImage: FC<{
-  projCode: string
-  to?: string
-}> = ({ projCode, to }) => {
-  return (
-    <div className='grid-section-image'>
-      {to ? (
-        <>
-          <Link to={to} className={projCode} />
-        </>
-      ) : (
-        <>
-          <a className={projCode} />
-        </>
-      )}
-    </div>
   )
 }
