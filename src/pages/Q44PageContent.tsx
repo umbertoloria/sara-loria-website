@@ -1,6 +1,7 @@
 import { FC } from 'react'
 import { GridSectionImage } from './MainPageContent.tsx'
 import { GridReal } from '../components/GridReal.tsx'
+import { SectionReal } from '../components/SectionReal.tsx'
 
 export const Q44PageContent: FC = () => {
   return (
@@ -22,10 +23,10 @@ export const Q44PageContent: FC = () => {
           a more conscious future.
         </p>
         <div className='line' />
-        <div className='section-real'>
+        <SectionReal>
           <img src='q44/sec0n0.jpg' alt='Open box' />
           <img src='q44/sec0n1.jpg' alt='Playing the game' />
-        </div>
+        </SectionReal>
         <p>
           A letter firstly greets those who approach, a guide to the deeper
           meaning of the exploration ahead. Then come maps, clues and physical
@@ -36,9 +37,9 @@ export const Q44PageContent: FC = () => {
           possible to sense what happened there, observing the streets and
           spaces with awareness and respect for their history.
         </p>
-        <div className='section-real'>
+        <SectionReal>
           <img src='q44/sec1.jpg' alt='Leporello' />
-        </div>
+        </SectionReal>
         <p>
           At the end of the activity, the leporello becomes a companion through
           the streets of the Quadraro. Through its illustrations, it traces step

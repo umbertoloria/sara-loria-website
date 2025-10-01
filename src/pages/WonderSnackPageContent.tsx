@@ -1,6 +1,7 @@
 import { FC } from 'react'
 import { GridSectionImage } from './MainPageContent.tsx'
 import { GridReal } from '../components/GridReal.tsx'
+import { SectionReal } from '../components/SectionReal.tsx'
 
 export const WonderSnackPageContent: FC = () => {
   return (
@@ -21,9 +22,9 @@ export const WonderSnackPageContent: FC = () => {
         </p>
         <div className='line' />
         {/* TODO: Put "alt"s here */}
-        <div className='section-real'>
+        <SectionReal>
           <img src='wondersnack/sec0.png' alt='' />
-        </div>
+        </SectionReal>
         <p>
           Its mechanism is inspired by slap wrap bracelets: with a quick and
           playful motion, Wonder Snack attaches to the water bottle, always
@@ -32,9 +33,9 @@ export const WonderSnackPageContent: FC = () => {
           back into place, ready to be used again.
         </p>
         <div className='line' />
-        <div className='section-real'>
+        <SectionReal>
           <img src='wondersnack/sec1.jpg' alt='' />
-        </div>
+        </SectionReal>
         <p>
           Wonder Snack is the winning project of the competition launched by
           AIRC (the Italian Association for Cancer Research), and has been

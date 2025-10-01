@@ -1,6 +1,7 @@
 import { FC } from 'react'
 import { GridSectionImage } from './MainPageContent.tsx'
 import { GridReal } from '../components/GridReal.tsx'
+import { SectionReal } from '../components/SectionReal.tsx'
 
 export const StanzaPageContent: FC = () => {
   return (
@@ -19,9 +20,9 @@ export const StanzaPageContent: FC = () => {
           freedom against the pressures of the mainstream.
         </p>
         <div className='line' />
-        <div className='section-real'>
+        <SectionReal>
           <img src='stanza/sec0n0.jpg' alt='Poster' />
-        </div>
+        </SectionReal>
         <p>
           From jam sessions and live concerts to open mic nights, it continues
           to celebrate music not only as art, but as a way of connecting people
