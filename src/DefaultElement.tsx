@@ -1,16 +1,13 @@
-import { Outlet } from 'react-router-dom'
-import { BaseLayout } from './layout/BaseLayout.tsx'
 import { Header } from './components/Header.tsx'
+import { FC, PropsWithChildren } from 'react'
 
-export const DefaultElement = () => {
+export const LayoutPage: FC<PropsWithChildren> = ({ children }) => {
   return (
-    <>
-      <BaseLayout>
-        <div id='layout'>
-          <Header />
-          <Outlet />
-        </div>
-      </BaseLayout>
-    </>
+    <main>
+      <div id='layout'>
+        <Header />
+        {children}
+      </div>
+    </main>
   )
 }

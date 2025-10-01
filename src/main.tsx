@@ -1,8 +1,8 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import { DefaultElement } from './DefaultElement.tsx'
+import { LayoutPage } from './DefaultElement.tsx'
 import './index.css'
-import { createHashRouter, RouterProvider } from 'react-router-dom'
+import { createHashRouter, Outlet, RouterProvider } from 'react-router-dom'
 import ErrorPage from './error-page.tsx'
 import { MainPageContent } from './pages/MainPageContent.tsx'
 import { TupperwarePageContent } from './pages/TupperwarePageContent.tsx'
@@ -18,6 +18,13 @@ export const pageStanzaHref = '/stanza' as const
 export const pageTraccePassatoHref = '/tracce-passato' as const
 export const pageWonderSnackHref = '/wonder-snack' as const
 
+const DefaultElement = () => {
+  return (
+    <LayoutPage>
+      <Outlet />
+    </LayoutPage>
+  )
+}
 const router = createHashRouter(
   [
     {
