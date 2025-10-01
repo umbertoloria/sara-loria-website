@@ -4,6 +4,7 @@ import {
   pageQ44Href,
   pageStanzaHref,
   pageTupperwareHref,
+  pageWonderSnackHref,
 } from '../main.tsx'
 import { Link } from 'react-router-dom'
 
@@ -18,6 +19,7 @@ export const MainPageContent: FC = () => {
         projCode='p4-tracce-passato'
         to={pageTraccePassatoHref}
       />
+      <GridSectionImage projCode='p5-wondersnack' to={pageWonderSnackHref} />
     </section>
   )
 }

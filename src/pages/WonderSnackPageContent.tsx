@@ -1,0 +1,52 @@
+import { FC } from 'react'
+import { GridSectionImage } from './MainPageContent.tsx'
+import { GridReal } from '../components/GridReal.tsx'
+
+export const WonderSnackPageContent: FC = () => {
+  return (
+    <>
+      <section>
+        <h1 className='lead'>Wonder Snack</h1>
+        <h2>Ergonomics laboratory</h2>
+        <GridSectionImage projCode='p5-wondersnack' />
+        <div className='line' />
+        <h1>concept</h1>
+        <p>
+          A snack container designed primarily for nuts, Wonder Snack was
+          created to highlight two essential moments for everyday wellbeing:
+          snacking and hydration. Often treated as separate habits, these two
+          gestures come together in a single, natural routine: drinking and
+          healthy eating blend into a daily practice that combines energy and
+          lightness.
+        </p>
+        <div className='line' />
+        {/* TODO: Put "alt"s here */}
+        <div className='section-real'>
+          <img src='wondersnack/sec0.png' alt='' />
+        </div>
+        <p>
+          Its mechanism is inspired by slap wrap bracelets: with a quick and
+          playful motion, Wonder Snack attaches to the water bottle, always
+          staying within reach. When needed, it detaches just as easily,
+          offering a healthy snack like nuts or dried fruit, before snapping
+          back into place, ready to be used again.
+        </p>
+        <div className='line' />
+        <div className='section-real'>
+          <img src='wondersnack/sec1.jpg' alt='' />
+        </div>
+        <p>
+          Wonder Snack is the winning project of the competition launched by
+          AIRC (the Italian Association for Cancer Research), and has been
+          envisioned as a product to be distributed during fundraising days
+          dedicated to donations.
+        </p>
+        <div className='line' />
+        <GridReal>
+          <img src='wondersnack/grid0n0.jpeg' alt='' />
+          <img src='wondersnack/grid0n1.jpg' alt='' />
+        </GridReal>
+      </section>
+    </>
+  )
+}

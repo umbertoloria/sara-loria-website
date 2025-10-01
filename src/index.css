@@ -148,6 +148,10 @@ section {
             &.p4-tracce-passato {
                 background-image: url('/tracce-passato/tracce-passato-cover.jpg');
             }
+
+            &.p5-wondersnack {
+                background-image: url('/wondersnack/wondersnack-cover.jpeg');
+            }
         }
     }
 
