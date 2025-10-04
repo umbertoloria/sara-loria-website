@@ -16,6 +16,7 @@ const Menu: FC = () => {
     <div className='menu'>
       <ul>
         {/*<MenuItem label='about me.' to={baseRoot} />*/}
+        {/* TODO: On click on Projects, perform scroll to "projects section" */}
         <MenuItem label='projects.' to={baseRoot} />
         <MenuItem label='contact.' to={baseRoot} />
       </ul>

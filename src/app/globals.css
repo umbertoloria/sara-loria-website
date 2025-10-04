@@ -185,6 +185,37 @@ section {
             border-radius: 2px;
         }
     }
+
+    &#contacts-box {
+        background: var(--cl-purple);
+
+        > div {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1rem;
+
+            span {
+                display: inline-block;
+
+                img {
+                    width: 20px;
+                    height: 20px;
+                    margin-right: 1rem;
+                }
+            }
+
+            a {
+                color: #fff;
+                font-size: 1.1rem;
+            }
+
+            &.location {
+                margin: 1.3rem 0 0 0;
+                font-size: 1.1rem;
+                color: rgba(255, 255, 255, 0.7);
+            }
+        }
+    }
 }
 
 /* @media only screen and (max-width: 768px) {} */
