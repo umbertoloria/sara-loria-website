@@ -17,23 +17,15 @@ const Menu: FC = () => {
   return (
     <div className='menu'>
       <ul>
-        {/*<MenuItem label='about me.' to={baseRoot} />*/}
         {/* TODO: On click on Projects, perform scroll to "projects section" */}
-        <MenuItem label='projects.' to={baseRoot} />
-        <MenuItem label='contact.' to={baseRoot} />
+        <li>
+          <Link href={baseRoot}>{'projects.'}</Link>
+        </li>
+        <li>
+          <Link href={baseRoot}>{'contact.'}</Link>
+        </li>
       </ul>
     </div>
-  )
-}
-
-const MenuItem: FC<{
-  label: string
-  to: string
-}> = ({ label, to }) => {
-  return (
-    <li>
-      <Link href={to}>{label}</Link>
-    </li>
   )
 }
 
