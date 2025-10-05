@@ -4,7 +4,7 @@ import { GridReal } from '../ui/GridReal'
 
 export default function StanzaPageContent() {
   return (
-    <>
+    <div className='layout'>
       <section>
         <h1 className='lead'>Stanza</h1>
         <h2>Graphic Design laboratory</h2>
@@ -41,6 +41,6 @@ export default function StanzaPageContent() {
           contributing to a collective bloom.
         </p>
       </section>
-    </>
+    </div>
   )
 }

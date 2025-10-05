@@ -4,7 +4,7 @@ import { GridReal } from '../ui/GridReal'
 
 export default function Q44PageContent() {
   return (
-    <>
+    <div className='layout'>
       <section>
         <h1 className='lead'>Q44</h1>
         <h2>Graphic Languages laboratory</h2>
@@ -55,6 +55,6 @@ export default function Q44PageContent() {
           <img src='/q44/grid0n1.jpg' alt='Datemark' />
         </GridReal>
       </section>
-    </>
+    </div>
   )
 }

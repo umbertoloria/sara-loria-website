@@ -3,7 +3,7 @@ import { GridReal } from '../ui/GridReal'
 
 export default function TupperwarePageContent() {
   return (
-    <>
+    <div className='layout'>
       <section>
         <h1 className='lead'>Tupperware rebranding</h1>
         <h2>Brand Design laboratory</h2>
@@ -41,6 +41,6 @@ export default function TupperwarePageContent() {
           <img src='/tupperware/grid1n1.jpg' alt='Mock-up poster' />
         </GridReal>
       </section>
-    </>
+    </div>
   )
 }

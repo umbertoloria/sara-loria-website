@@ -5,11 +5,9 @@ import { ContactsBox } from '@/app/ui/ContactsBox'
 export const LayoutPage: FC<PropsWithChildren> = ({ children }) => {
   return (
     <main>
-      <div id='layout'>
-        <Header />
-        {children}
-        <ContactsBox />
-      </div>
+      <Header />
+      {children}
+      <ContactsBox />
     </main>
   )
 }

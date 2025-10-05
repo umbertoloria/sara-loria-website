@@ -5,8 +5,10 @@ import { baseRoot } from '@/app/paths'
 export const Header: FC = () => {
   return (
     <div className='header'>
-      <Menu />
-      <ImaVisual />
+      <div className='layout'>
+        <Menu />
+        <ImaVisual />
+      </div>
     </div>
   )
 }

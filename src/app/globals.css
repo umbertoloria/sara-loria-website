@@ -4,7 +4,7 @@
     --cl-black: #333;
     --cl-gray: #888;
     --cl-white: #fffbf6;
-    --cl-white-transparent: rgba(255, 251, 246, 0.75);
+    --cl-white-transparent: rgba(255, 251, 246, 0.85);
     --cl-purple: #893168;
     --cl-yellow: #ffe080;
     /*
@@ -19,24 +19,26 @@ body {
     font-family:
         Instrument Sans,
         sans-serif;
-    background: #f6f2e7;
+    background-color: var(--cl-white);
     margin: 0;
     overflow-y: scroll;
 }
 
-#layout {
+.layout {
     max-width: 700px;
+    box-sizing: border-box;
     margin: 0 auto;
+    padding: 2rem;
 }
 
 .header {
-    display: block;
     background: var(--cl-purple);
     color: var(--cl-white);
-    width: 100%;
-    /*height: 100vh;*/
-    padding-top: 40px;
-    padding-bottom: 140px;
+
+    .layout {
+        padding-top: 40px;
+        padding-bottom: 140px;
+    }
 
     .menu {
         /*margin-top: 40px;*/
@@ -71,7 +73,7 @@ body {
     }
 
     .ima-visual {
-        padding: 130px 2rem 0 2rem;
+        padding: 130px 0 0 0;
 
         .ima-visual-title {
             font-size: 2rem;
@@ -95,7 +97,6 @@ body {
 
 section {
     background: var(--cl-white);
-    padding: 2rem;
 
     h1 {
         font-size: 1.5em;
@@ -185,37 +186,45 @@ section {
             border-radius: 2px;
         }
     }
+}
 
-    &#contacts-box {
-        background: var(--cl-purple);
+footer {
+    background: var(--cl-purple);
+    color: var(--cl-white);
+}
 
-        > div {
-            display: flex;
-            align-items: center;
-            margin-bottom: 1rem;
+.contacts-box {
+    > div {
+        display: flex;
+        align-items: center;
+        margin-bottom: 1rem;
 
-            span {
-                display: inline-block;
+        span {
+            display: inline-block;
 
-                img {
-                    width: 20px;
-                    height: 20px;
-                    margin-right: 1rem;
-                }
+            img {
+                width: 20px;
+                height: 20px;
+                margin-right: 1rem;
             }
+        }
 
-            a {
-                color: #fff;
-                font-size: 1.1rem;
-            }
+        a {
+            color: var(--cl-white);
+            font-size: 1.1rem;
+        }
 
-            &.location {
-                margin: 1.3rem 0 0 0;
-                font-size: 1.1rem;
-                color: rgba(255, 255, 255, 0.7);
-            }
+        &.location {
+            margin: 1.3rem 0 0 0;
+            font-size: 1.1rem;
+            color: rgba(255, 255, 255, 0.7);
         }
     }
 }
 
-/* @media only screen and (max-width: 768px) {} */
+@media only screen and (max-width: 768px) {
+    /*.layout {
+        max-width: 700px;
+        margin: 0 auto;
+    }*/
+}

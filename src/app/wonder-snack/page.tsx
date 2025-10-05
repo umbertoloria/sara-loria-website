@@ -4,7 +4,7 @@ import { GridReal } from '../ui/GridReal'
 
 export default function WonderSnackPageContent() {
   return (
-    <>
+    <div className='layout'>
       <section>
         <h1 className='lead'>Wonder Snack</h1>
         <h2>Ergonomics laboratory</h2>
@@ -47,6 +47,6 @@ export default function WonderSnackPageContent() {
           <img src='/wondersnack/grid0n1.jpg' alt='' />
         </GridReal>
       </section>
-    </>
+    </div>
   )
 }

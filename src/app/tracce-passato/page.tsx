@@ -3,7 +3,7 @@ import { GridReal } from '../ui/GridReal'
 
 export default function TraccePassatoPageContent() {
   return (
-    <>
+    <div className='layout'>
       <section>
         <h1 className='lead'>Tracce di un passato</h1>
         <h2>Image and storytelling laboratory</h2>
@@ -41,6 +41,6 @@ export default function TraccePassatoPageContent() {
           <img src='/tracce-passato/17.jpg' alt='' />
         </GridReal>
       </section>
-    </>
+    </div>
   )
 }
