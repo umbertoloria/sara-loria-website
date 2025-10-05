@@ -21,24 +21,24 @@ export default function TraccePassatoPageContent() {
         <div className='line' />
         {/* TODO: Put "alt"s here */}
         <GridReal>
-          <img src='tracce-passato/0.jpg' alt='' />
-          <img src='tracce-passato/1.jpg' alt='' />
-          <img src='tracce-passato/2.jpg' alt='' />
-          <img src='tracce-passato/3.jpg' alt='' />
-          <img src='tracce-passato/4.jpg' alt='' />
-          <img src='tracce-passato/5.jpg' alt='' />
-          <img src='tracce-passato/6.jpg' alt='' />
-          <img src='tracce-passato/7.jpg' alt='' />
-          <img src='tracce-passato/8.jpg' alt='' />
-          <img src='tracce-passato/9.jpg' alt='' />
-          <img src='tracce-passato/10.jpg' alt='' />
-          <img src='tracce-passato/11.jpg' alt='' />
-          <img src='tracce-passato/12.jpg' alt='' />
-          <img src='tracce-passato/13.jpg' alt='' />
-          <img src='tracce-passato/14.jpg' alt='' />
-          <img src='tracce-passato/15.jpg' alt='' />
-          <img src='tracce-passato/16.jpg' alt='' />
-          <img src='tracce-passato/17.jpg' alt='' />
+          <img src='/tracce-passato/0.jpg' alt='' />
+          <img src='/tracce-passato/1.jpg' alt='' />
+          <img src='/tracce-passato/2.jpg' alt='' />
+          <img src='/tracce-passato/3.jpg' alt='' />
+          <img src='/tracce-passato/4.jpg' alt='' />
+          <img src='/tracce-passato/5.jpg' alt='' />
+          <img src='/tracce-passato/6.jpg' alt='' />
+          <img src='/tracce-passato/7.jpg' alt='' />
+          <img src='/tracce-passato/8.jpg' alt='' />
+          <img src='/tracce-passato/9.jpg' alt='' />
+          <img src='/tracce-passato/10.jpg' alt='' />
+          <img src='/tracce-passato/11.jpg' alt='' />
+          <img src='/tracce-passato/12.jpg' alt='' />
+          <img src='/tracce-passato/13.jpg' alt='' />
+          <img src='/tracce-passato/14.jpg' alt='' />
+          <img src='/tracce-passato/15.jpg' alt='' />
+          <img src='/tracce-passato/16.jpg' alt='' />
+          <img src='/tracce-passato/17.jpg' alt='' />
         </GridReal>
       </section>
     </>

@@ -21,10 +21,10 @@ export default function TupperwarePageContent() {
         </p>
         <div className='line' />
         <GridReal>
-          <img src='tupperware/grid0n0.jpg' alt='Open package' />
-          <img src='tupperware/grid0n1.jpg' alt='Multiple boxes' />
-          <img src='tupperware/grid0n2.jpg' alt='Showcase box' />
-          <img src='tupperware/grid0n3.jpg' alt='Three boxes' />
+          <img src='/tupperware/grid0n0.jpg' alt='Open package' />
+          <img src='/tupperware/grid0n1.jpg' alt='Multiple boxes' />
+          <img src='/tupperware/grid0n2.jpg' alt='Showcase box' />
+          <img src='/tupperware/grid0n3.jpg' alt='Three boxes' />
         </GridReal>
         <p>
           Tupperware is embracing a new chapter, moving beyond the traditional
@@ -37,8 +37,8 @@ export default function TupperwarePageContent() {
         </p>
         <div className='line' />
         <GridReal>
-          <img src='tupperware/grid1n0.jpg' alt='Mock-up logo' />
-          <img src='tupperware/grid1n1.jpg' alt='Mock-up poster' />
+          <img src='/tupperware/grid1n0.jpg' alt='Mock-up logo' />
+          <img src='/tupperware/grid1n1.jpg' alt='Mock-up poster' />
         </GridReal>
       </section>
     </>

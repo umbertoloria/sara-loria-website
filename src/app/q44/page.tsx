@@ -23,8 +23,8 @@ export default function Q44PageContent() {
         </p>
         <div className='line' />
         <SectionReal>
-          <img src='q44/sec0n0.jpg' alt='Open box' />
-          <img src='q44/sec0n1.jpg' alt='Playing the game' />
+          <img src='/q44/sec0n0.jpg' alt='Open box' />
+          <img src='/q44/sec0n1.jpg' alt='Playing the game' />
         </SectionReal>
         <p>
           A letter firstly greets those who approach, a guide to the deeper
@@ -37,7 +37,7 @@ export default function Q44PageContent() {
           spaces with awareness and respect for their history.
         </p>
         <SectionReal>
-          <img src='q44/sec1.jpg' alt='Leporello' />
+          <img src='/q44/sec1.jpg' alt='Leporello' />
         </SectionReal>
         <p>
           At the end of the activity, the leporello becomes a companion through
@@ -51,8 +51,8 @@ export default function Q44PageContent() {
         </p>
         <div className='line' />
         <GridReal>
-          <img src='q44/grid0n0.jpg' alt='Label' />
-          <img src='q44/grid0n1.jpg' alt='Datemark' />
+          <img src='/q44/grid0n0.jpg' alt='Label' />
+          <img src='/q44/grid0n1.jpg' alt='Datemark' />
         </GridReal>
       </section>
     </>

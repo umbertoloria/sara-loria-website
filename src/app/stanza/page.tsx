@@ -20,7 +20,7 @@ export default function StanzaPageContent() {
         </p>
         <div className='line' />
         <SectionReal>
-          <img src='stanza/sec0n0.jpg' alt='Poster' />
+          <img src='/stanza/sec0n0.jpg' alt='Poster' />
         </SectionReal>
         <p>
           From jam sessions and live concerts to open mic nights, it continues
@@ -28,10 +28,10 @@ export default function StanzaPageContent() {
           and building lasting scenes.
         </p>
         <GridReal>
-          <img src='stanza/grid0n0.jpg' alt='Custom guitar picks' />
-          <img src='stanza/grid0n1.jpg' alt='Hat with logo' />
-          <img src='stanza/grid0n2.jpeg' alt='T-shirt with logo' />
-          <img src='stanza/grid0n3.jpeg' alt='Cards with logo' />
+          <img src='/stanza/grid0n0.jpg' alt='Custom guitar picks' />
+          <img src='/stanza/grid0n1.jpg' alt='Hat with logo' />
+          <img src='/stanza/grid0n2.jpeg' alt='T-shirt with logo' />
+          <img src='/stanza/grid0n3.jpeg' alt='Cards with logo' />
         </GridReal>
         <p>
           The flower, this its many petals - close to one another yet each rich
