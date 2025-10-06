@@ -8,7 +8,7 @@ export default function WonderSnackPageContent() {
       <section>
         <h1 className='lead'>Wonder Snack</h1>
         <h2>Ergonomics laboratory</h2>
-        <GridSectionImage projCode='p5-wondersnack' />
+        <GridSectionImage projCode='p5-wonder-snack' />
         <div className='line' />
         <h1>concept</h1>
         <p>
@@ -22,7 +22,7 @@ export default function WonderSnackPageContent() {
         <div className='line' />
         <SectionReal>
           <img
-            src='/wondersnack/sec0.png'
+            src='/wonder-snack/sec0.png'
             alt='Illustrations showing how to use the product'
           />
         </SectionReal>
@@ -36,7 +36,7 @@ export default function WonderSnackPageContent() {
         <div className='line' />
         <SectionReal>
           <img
-            src='/wondersnack/sec1.jpg'
+            src='/wonder-snack/sec1.jpg'
             alt='Showcase of the product prototype'
           />
         </SectionReal>
@@ -49,11 +49,11 @@ export default function WonderSnackPageContent() {
         <div className='line' />
         <GridReal>
           <img
-            src='/wondersnack/grid0n0.jpeg'
+            src='/wonder-snack/grid0n0.jpeg'
             alt='Award presentation by AIRC'
           />
           <img
-            src='/wondersnack/grid0n1.jpg'
+            src='/wonder-snack/grid0n1.jpg'
             alt='Close-up shots of the prototypes'
           />
         </GridReal>

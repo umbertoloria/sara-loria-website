@@ -20,7 +20,7 @@ export default function MainPageContent() {
           projCode='p4-tracce-passato'
           to={pageTraccePassatoHref}
         />
-        <GridSectionImage projCode='p5-wondersnack' to={pageWonderSnackHref} />
+        <GridSectionImage projCode='p5-wonder-snack' to={pageWonderSnackHref} />
         <GridSectionImage
           projCode='p6-heavy-dirty-sans'
           to={pageHeavyDirtySans}
