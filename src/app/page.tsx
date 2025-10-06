@@ -1,5 +1,6 @@
 import { GridSectionImage } from '@/app/ui/GridSectionImage'
 import {
+  pageHeavyDirtySans,
   pageQ44Href,
   pageStanzaHref,
   pageTraccePassatoHref,
@@ -20,6 +21,10 @@ export default function MainPageContent() {
           to={pageTraccePassatoHref}
         />
         <GridSectionImage projCode='p5-wondersnack' to={pageWonderSnackHref} />
+        <GridSectionImage
+          projCode='p6-heavy-dirty-sans'
+          to={pageHeavyDirtySans}
+        />
       </section>
     </div>
   )

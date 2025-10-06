@@ -162,6 +162,10 @@ section {
             &.p5-wondersnack {
                 background-image: url("/wondersnack/wondersnack-cover.jpeg");
             }
+
+            &.p6-heavy-dirty-sans {
+                background-image: url("/heavy-dirty-sans/heavy-dirty-sans-cover.jpg");
+            }
         }
     }
 
