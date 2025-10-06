@@ -20,9 +20,11 @@ export default function WonderSnackPageContent() {
           lightness.
         </p>
         <div className='line' />
-        {/* TODO: Put "alt"s here */}
         <SectionReal>
-          <img src='/wondersnack/sec0.png' alt='' />
+          <img
+            src='/wondersnack/sec0.png'
+            alt='Illustrations showing how to use the product'
+          />
         </SectionReal>
         <p>
           Its mechanism is inspired by slap wrap bracelets: with a quick and
@@ -33,7 +35,10 @@ export default function WonderSnackPageContent() {
         </p>
         <div className='line' />
         <SectionReal>
-          <img src='/wondersnack/sec1.jpg' alt='' />
+          <img
+            src='/wondersnack/sec1.jpg'
+            alt='Showcase of the product prototype'
+          />
         </SectionReal>
         <p>
           Wonder Snack is the winning project of the competition launched by
@@ -43,8 +48,14 @@ export default function WonderSnackPageContent() {
         </p>
         <div className='line' />
         <GridReal>
-          <img src='/wondersnack/grid0n0.jpeg' alt='' />
-          <img src='/wondersnack/grid0n1.jpg' alt='' />
+          <img
+            src='/wondersnack/grid0n0.jpeg'
+            alt='Award presentation by AIRC'
+          />
+          <img
+            src='/wondersnack/grid0n1.jpg'
+            alt='Close-up shots of the prototypes'
+          />
         </GridReal>
       </section>
     </div>
