@@ -4,10 +4,10 @@ import { ContactsBox } from '@/app/ui/ContactsBox'
 
 export const LayoutPage: FC<PropsWithChildren> = ({ children }) => {
   return (
-    <main>
+    <>
       <Header />
-      {children}
+      <main id='main'>{children}</main>
       <ContactsBox />
-    </main>
+    </>
   )
 }

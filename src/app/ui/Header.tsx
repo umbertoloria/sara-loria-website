@@ -1,4 +1,7 @@
+'use client'
+
 import { FC } from 'react'
+import { usePathname } from 'next/navigation'
 import Link from 'next/link'
 import { baseRoot } from '@/app/paths'
 
@@ -14,15 +17,48 @@ export const Header: FC = () => {
 }
 
 const Menu: FC = () => {
+  const pathname = usePathname()
   return (
     <div className='menu'>
       <ul>
-        {/* TODO: On click on Projects, perform scroll to "projects section" */}
+        {pathname !== '/' ? (
+          <>
+            <li>
+              <Link href={baseRoot}>projects.</Link>
+            </li>
+          </>
+        ) : (
+          <>
+            <li>
+              <a
+                onClick={() => {
+                  let mainTop = document
+                    .getElementById('main')
+                    ?.getBoundingClientRect().top
+                  scrollTo({
+                    top: mainTop,
+                    behavior: 'smooth',
+                  })
+                }}
+              >
+                projects.
+              </a>
+            </li>
+          </>
+        )}
+
         <li>
-          <Link href={baseRoot}>{'projects.'}</Link>
-        </li>
-        <li>
-          <Link href={baseRoot}>{'contact.'}</Link>
+          <a
+            onClick={() => {
+              const pageHeight = document.documentElement.scrollHeight
+              scrollTo({
+                top: pageHeight, // Excess but not a problem.
+                behavior: 'smooth',
+              })
+            }}
+          >
+            contact.
+          </a>
         </li>
       </ul>
     </div>
