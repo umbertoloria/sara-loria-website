@@ -2,45 +2,45 @@ import { GridSectionImage } from '../ui/GridSectionImage'
 import { GridReal } from '../ui/GridReal'
 
 export default function TupperwarePageContent() {
-  return (
-    <div className='layout'>
-      <section>
-        <h1 className='lead'>Tupperware rebranding</h1>
-        <h2>Brand Design laboratory</h2>
-        <GridSectionImage projCode='p1-tupperware' />
-        <div className='line' />
-        <h1>concept</h1>
-        <p>
-          Tupperware's rebrand speaks directly to a new generation of young,
-          conscious consumers. Long known for quality, durability, and bringing
-          people together, the brand is determined to keep these values alive
-          while reimagining itself as a champion of sustainability, that takes
-          care of the planet, and the people who call it home. Tupperware's
-          renewed vision invites customers to join heathy choices for a better
-          future.
-        </p>
-        <div className='line' />
-        <GridReal>
-          <img src='/tupperware/grid0n0.jpg' alt='Open package' />
-          <img src='/tupperware/grid0n1.jpg' alt='Multiple boxes' />
-          <img src='/tupperware/grid0n2.jpg' alt='Showcase box' />
-          <img src='/tupperware/grid0n3.jpg' alt='Three boxes' />
-        </GridReal>
-        <p>
-          Tupperware is embracing a new chapter, moving beyond the traditional
-          door-to-door model that once defined its success. By stepping into
-          physical retail and partnering with trusted local outlets, the brand
-          is breaking down barriers between people and products, making its
-          designs more accessible then ever. This evolution isn't just about
-          where is sold, it's about how it connects: immediate, visible, and
-          aligned with the way consumers shop today.
-        </p>
-        <div className='line' />
-        <GridReal>
-          <img src='/tupperware/grid1n0.jpg' alt='Mock-up logo' />
-          <img src='/tupperware/grid1n1.jpg' alt='Mock-up poster' />
-        </GridReal>
-      </section>
-    </div>
-  )
+	return (
+		<div className='layout'>
+			<section>
+				<h1 className='lead'>Tupperware rebranding</h1>
+				<h2>Brand Design laboratory</h2>
+				<GridSectionImage projCode='p1-tupperware' />
+				<div className='line' />
+				<h1>concept</h1>
+				<p>
+					Tupperware's rebrand speaks directly to a new generation of young,
+					conscious consumers. Long known for quality, durability, and bringing
+					people together, the brand is determined to keep these values alive
+					while reimagining itself as a champion of sustainability, that takes
+					care of the planet, and the people who call it home. Tupperware's
+					renewed vision invites customers to join heathy choices for a better
+					future.
+				</p>
+				<div className='line' />
+				<GridReal>
+					<img src='/tupperware/grid0n0.jpg' alt='Open package' />
+					<img src='/tupperware/grid0n1.jpg' alt='Multiple boxes' />
+					<img src='/tupperware/grid0n2.jpg' alt='Showcase box' />
+					<img src='/tupperware/grid0n3.jpg' alt='Three boxes' />
+				</GridReal>
+				<p>
+					Tupperware is embracing a new chapter, moving beyond the traditional
+					door-to-door model that once defined its success. By stepping into
+					physical retail and partnering with trusted local outlets, the brand
+					is breaking down barriers between people and products, making its
+					designs more accessible then ever. This evolution isn't just about
+					where is sold, it's about how it connects: immediate, visible, and
+					aligned with the way consumers shop today.
+				</p>
+				<div className='line' />
+				<GridReal>
+					<img src='/tupperware/grid1n0.jpg' alt='Mock-up logo' />
+					<img src='/tupperware/grid1n1.jpg' alt='Mock-up poster' />
+				</GridReal>
+			</section>
+		</div>
+	)
 }
