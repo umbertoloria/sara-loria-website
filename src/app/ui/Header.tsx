@@ -6,25 +6,28 @@ import Link from 'next/link'
 import { baseRoot } from '@/app/paths'
 
 export const Header: FC = () => {
+	const pathname = usePathname()
+	const isHomepage = pathname === '/'
 	return (
-		<div className='header'>
+		<div className={`header ${isHomepage ? '' : 'small'}`}>
 			<div className='layout'>
-				<Menu />
-				<ImaVisual />
+				<Menu isHomepage={isHomepage} />
+				{isHomepage && <ImaVisual />}
 			</div>
 		</div>
 	)
 }
 
-const Menu: FC = () => {
-	const pathname = usePathname()
+const Menu: FC<{
+	isHomepage: boolean
+}> = ({ isHomepage }) => {
 	return (
 		<div className='menu'>
 			<ul>
-				{pathname !== '/' ? (
+				{!isHomepage ? (
 					<>
 						<li>
-							<Link href={baseRoot}>projects.</Link>
+							<Link href={baseRoot}>me.</Link>
 						</li>
 					</>
 				) : (
