@@ -1,9 +1,38 @@
 import { FC } from 'react'
+import Link from 'next/link'
+import {
+	pageHeavyDirtySans,
+	pageQ44Href,
+	pageStanzaHref,
+	pageTraccePassatoHref,
+	pageTupperwareHref,
+	pageWonderSnackHref,
+} from '@/app/paths'
 
-export const ContactsBox: FC = () => {
+export const Footer: FC = () => {
 	return (
 		<footer>
 			<div className='layout'>
+				<div className='contacts-box with-projects'>
+					<div>
+						<Link href={pageTupperwareHref}>Tupperware</Link>
+					</div>
+					<div>
+						<Link href={pageQ44Href}>Q44</Link>
+					</div>
+					<div>
+						<Link href={pageStanzaHref}>Stanza</Link>
+					</div>
+					<div>
+						<Link href={pageTraccePassatoHref}>Tracce passato</Link>
+					</div>
+					<div>
+						<Link href={pageWonderSnackHref}>Wonder Snack</Link>
+					</div>
+					<div>
+						<Link href={pageHeavyDirtySans}>HeavyDirtySans</Link>
+					</div>
+				</div>
 				<div className='contacts-box'>
 					<div className='linkedin'>
 						<img src='/social/linkedin.png' alt='LinkedIn' />

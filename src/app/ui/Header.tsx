@@ -1,13 +1,12 @@
 'use client'
 
 import { FC } from 'react'
-import { usePathname } from 'next/navigation'
 import Link from 'next/link'
 import { baseRoot } from '@/app/paths'
 
-export const Header: FC = () => {
-	const pathname = usePathname()
-	const isHomepage = pathname === '/'
+export const Header: FC<{
+	isHomepage: boolean
+}> = ({ isHomepage }) => {
 	return (
 		<div className={`header ${isHomepage ? '' : 'small'}`}>
 			<div className='layout'>

@@ -11,6 +11,7 @@ export default function RootLayout({
 				<meta charSet='UTF-8' />
 				<meta name='viewport' content='width=device-width, initial-scale=1.0' />
 				<title>Sara Loria</title>
+				<link rel='icon' href='/favicon.png' sizes='any' />
 			</head>
 			<body>
 				<LayoutPage>{children}</LayoutPage>
