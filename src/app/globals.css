@@ -207,23 +207,24 @@ footer {
 
 .contacts-box {
 	font-size: 0.9rem;
+	display: flex;
+	justify-content: space-between;
 
 	> div {
 		display: flex;
 		align-items: center;
 		margin-bottom: 1rem;
 
-		span {
-			display: inline-block;
-
-			img {
-				width: 24px;
-				height: 24px;
-				margin-right: 1rem;
-			}
+		img {
+			display: block;
+			width: 24px;
+			height: 24px;
+			margin-right: 1rem;
 		}
 
 		a {
+			display: block;
+			height: 24px;
 			color: var(--cl-white);
 		}
 
