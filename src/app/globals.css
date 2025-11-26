@@ -45,8 +45,8 @@ body {
 	color: var(--cl-white);
 
 	.layout {
-		padding-top: 40px;
-		padding-bottom: 140px;
+		padding-top: 60px;
+		padding-bottom: 160px;
 	}
 
 	.menu {
@@ -81,7 +81,7 @@ body {
 	}
 
 	.ima-visual {
-		padding: 130px 0 0 0;
+		padding: 150px 0 0 0;
 
 		.ima-visual-title {
 			font-size: 2.6rem;
