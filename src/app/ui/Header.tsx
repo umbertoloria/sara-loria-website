@@ -8,8 +8,8 @@ export const Header: FC<{
 	isHomepage: boolean
 }> = ({ isHomepage }) => {
 	return (
-		<div className={`header ${isHomepage ? '' : 'small'}`}>
-			<div className='layout'>
+		<div className='header'>
+			<div className={`layout ${isHomepage ? '' : 'small'}`}>
 				<Menu isHomepage={isHomepage} />
 				{isHomepage && <ImaVisual />}
 			</div>

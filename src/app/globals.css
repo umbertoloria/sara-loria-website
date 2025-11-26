@@ -47,6 +47,11 @@ body {
 	.layout {
 		padding-top: 60px;
 		padding-bottom: 60px;
+
+        &.small {
+            padding-top: 30px;
+            padding-bottom: 30px;
+        }
 	}
 
 	.menu {
